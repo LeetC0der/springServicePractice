@@ -43,7 +43,6 @@ public class ApplicationController {
         return applicationService.getJpaRepoSortAndPageLimit(page, size);
     }
     
-
     @PostMapping("/")
     public ResponseEntity<?> addNewApplicant(@RequestBody ApplicationModle entity) {
         return applicationService.addNewApplication(entity);
